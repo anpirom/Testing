@@ -1,6 +1,6 @@
 {
   "emitLegacyScripts": false,
-  "name": "easy-defense",
+  "name": "Testing",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
