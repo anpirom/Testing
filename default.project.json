@@ -1,6 +1,6 @@
 {
   "emitLegacyScripts": false,
-  "name": "Testing",
+  "name": "testing",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
