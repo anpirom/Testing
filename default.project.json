@@ -1,60 +1,879 @@
 {
-  "name": "genrojotree",
+  "emitLegacyScripts": false,
+  "name": "easy-defense",
   "tree": {
     "$className": "DataModel",
     "ReplicatedStorage": {
-      "Shared": {
+      "Source": {
         "$className": "Folder",
-        "Services": {
+        "Features": {
           "$className": "Folder",
-          "ExampleService": {
+          "App": {
             "$className": "Folder",
-            "ExampleServiceClient": {
-              "$path": "src/services/ExampleService/Client.luau"
+            "UI": {
+              "$className": "Folder",
+              "Components": {
+                "$className": "Folder",
+                "InsetFrame": {
+                  "$path": "src/features/app/ui/components/InsetFrame.luau"
+                },
+                "RobuxButton": {
+                  "$path": "src/features/app/ui/components/RobuxButton.luau"
+                },
+                "StudBackground": {
+                  "$path": "src/features/app/ui/components/StudBackground.luau"
+                },
+                "StudButton": {
+                  "$path": "src/features/app/ui/components/StudButton.luau"
+                },
+                "StudFrame": {
+                  "$path": "src/features/app/ui/components/StudFrame.luau"
+                },
+                "TransparentFrame": {
+                  "$path": "src/features/app/ui/components/TransparentFrame.luau"
+                }
+              },
+              "Hud": {
+                "$className": "Folder",
+                "BottomBar": {
+                  "$path": "src/features/app/ui/hud/BottomBar.luau"
+                },
+                "HudRoot": {
+                  "$path": "src/features/app/ui/hud/HudRoot.luau"
+                },
+                "LeftSideBar": {
+                  "$path": "src/features/app/ui/hud/LeftSideBar.luau"
+                },
+                "TopBar": {
+                  "$path": "src/features/app/ui/hud/TopBar.luau"
+                },
+                "TopBarButtons": {
+                  "$path": "src/features/app/ui/hud/TopBarButtons.luau"
+                }
+              },
+              "Menus": {
+                "$className": "Folder",
+                "GiftingMenu": {
+                  "$path": "src/features/app/ui/menus/GiftingMenu.luau"
+                },
+                "GiftReceivedMenu": {
+                  "$path": "src/features/app/ui/menus/GiftReceivedMenu.luau"
+                },
+                "IndexMenu": {
+                  "$path": "src/features/app/ui/menus/IndexMenu.luau"
+                },
+                "LikeMenu": {
+                  "$path": "src/features/app/ui/menus/LikeMenu.luau"
+                },
+                "Menu": {
+                  "$path": "src/features/app/ui/menus/Menu.luau"
+                },
+                "MenuRoot": {
+                  "$path": "src/features/app/ui/menus/MenuRoot.luau"
+                },
+                "OddsMenu": {
+                  "$path": "src/features/app/ui/menus/OddsMenu.luau"
+                },
+                "RebirthMenu": {
+                  "$path": "src/features/app/ui/menus/RebirthMenu.luau"
+                },
+                "SellMenu": {
+                  "$path": "src/features/app/ui/menus/SellMenu.luau"
+                },
+                "SettingsMenu": {
+                  "$path": "src/features/app/ui/menus/SettingsMenu.luau"
+                },
+                "ShopMenu": {
+                  "$path": "src/features/app/ui/menus/ShopMenu.luau"
+                }
+              },
+              "root.story": {
+                "$path": "src/features/app/ui/root.story.luau"
+              },
+              "RootUI": {
+                "$path": "src/features/app/ui/RootUI.luau"
+              },
+              "Screens": {
+                "$className": "Folder",
+                "RebirthRewardScreen": {
+                  "$path": "src/features/app/ui/screens/RebirthRewardScreen.luau"
+                },
+                "Screen": {
+                  "$path": "src/features/app/ui/screens/Screen.luau"
+                },
+                "ScreenRoot": {
+                  "$path": "src/features/app/ui/screens/ScreenRoot.luau"
+                }
+              }
+            }
+          },
+          "AutoRejoin": {
+            "$className": "Folder",
+            "AutoRejoinServiceClient": {
+              "$path": "src/features/autoRejoin/AutoRejoinServiceClient.luau"
+            }
+          },
+          "Codes": {
+            "$className": "Folder",
+            "CodeRewardCallbacks": {
+              "$path": "src/features/codes/CodeRewardCallbacks.luau"
             },
-            "ExampleServiceUtils": {
-              "$path": "src/services/ExampleService/Utils.luau"
+            "CodeServiceClient": {
+              "$path": "src/features/codes/CodeServiceClient.luau"
+            },
+            "CodeServiceUtils": {
+              "$path": "src/features/codes/CodeServiceUtils.luau"
+            }
+          },
+          "Conveyor": {
+            "$className": "Folder",
+            "ConveyorClient": {
+              "$path": "src/features/conveyor/ConveyorClient.luau"
+            },
+            "Modules": {
+              "$className": "Folder",
+              "TouchPad": {
+                "$path": "src/features/conveyor/modules/TouchPad.luau"
+              }
+            }
+          },
+          "Crates": {
+            "$className": "Folder",
+            "Classes": {
+              "$className": "Folder",
+              "CrateClient": {
+                "$path": "src/features/crates/classes/CrateClient.luau"
+              }
+            },
+            "CrateSlice": {
+              "$path": "src/features/crates/CrateSlice.luau"
+            },
+            "Modules": {
+              "$className": "Folder",
+              "CrateOpenVfx": {
+                "$path": "src/features/crates/modules/CrateOpenVfx.luau"
+              },
+              "Crates": {
+                "$path": "src/features/crates/modules/Crates.luau"
+              },
+              "LuckyBlockOpenVfx": {
+                "$path": "src/features/crates/modules/LuckyBlockOpenVfx.luau"
+              }
+            },
+            "UI": {
+              "$className": "Folder",
+              "CrateRoot": {
+                "$path": "src/features/crates/ui/CrateRoot.luau"
+              },
+              "Screens": {
+                "$className": "Folder",
+                "CrateBillboardGui": {
+                  "$path": "src/features/crates/ui/screens/CrateBillboardGui.luau"
+                },
+                "CrateBillboards": {
+                  "$path": "src/features/crates/ui/screens/CrateBillboards.luau"
+                }
+              }
+            }
+          },
+          "Defense": {
+            "$className": "Folder",
+            "Classes": {
+              "$className": "Folder",
+              "DefenseClient": {
+                "$path": "src/features/defense/classes/DefenseClient.luau"
+              },
+              "EnemyClient": {
+                "$path": "src/features/defense/classes/EnemyClient.luau"
+              },
+              "TowerClient": {
+                "$path": "src/features/defense/classes/TowerClient.luau"
+              }
+            },
+            "Modules": {
+              "$className": "Folder",
+              "Enemies": {
+                "$path": "src/features/defense/modules/Enemies.luau"
+              },
+              "HitSplat": {
+                "$path": "src/features/defense/modules/HitSplat.luau"
+              },
+              "PathUtils": {
+                "$path": "src/features/defense/modules/PathUtils.luau"
+              },
+              "Towers": {
+                "$path": "src/features/defense/modules/Towers.luau"
+              }
+            },
+            "TowerAnimations": {
+              "$className": "Folder",
+              "cannon": {
+                "$path": "src/features/defense/towerAnimations/cannon.luau"
+              },
+              "catapult": {
+                "$path": "src/features/defense/towerAnimations/catapult.luau"
+              },
+              "crossbow": {
+                "$path": "src/features/defense/towerAnimations/crossbow.luau"
+              },
+              "darkTerra": {
+                "$path": "src/features/defense/towerAnimations/darkTerra.luau"
+              },
+              "dualshot": {
+                "$path": "src/features/defense/towerAnimations/dualshot.luau"
+              },
+              "eradicator": {
+                "$path": "src/features/defense/towerAnimations/eradicator.luau"
+              },
+              "flamethrower": {
+                "$path": "src/features/defense/towerAnimations/flamethrower.luau"
+              },
+              "harpoon": {
+                "$path": "src/features/defense/towerAnimations/harpoon.luau"
+              },
+              "hydroBlaster": {
+                "$path": "src/features/defense/towerAnimations/hydroBlaster.luau"
+              },
+              "infrared": {
+                "$path": "src/features/defense/towerAnimations/infrared.luau"
+              },
+              "laserBlaster": {
+                "$path": "src/features/defense/towerAnimations/laserBlaster.luau"
+              },
+              "minigun": {
+                "$path": "src/features/defense/towerAnimations/minigun.luau"
+              },
+              "obliterator": {
+                "$path": "src/features/defense/towerAnimations/obliterator.luau"
+              },
+              "orbOfDarkness": {
+                "$path": "src/features/defense/towerAnimations/orbOfDarkness.luau"
+              },
+              "orbOfLight": {
+                "$path": "src/features/defense/towerAnimations/orbOfLight.luau"
+              },
+              "overdrive": {
+                "$path": "src/features/defense/towerAnimations/overdrive.luau"
+              },
+              "overseer": {
+                "$path": "src/features/defense/towerAnimations/overseer.luau"
+              },
+              "phantom": {
+                "$path": "src/features/defense/towerAnimations/phantom.luau"
+              },
+              "plasmaCannon": {
+                "$path": "src/features/defense/towerAnimations/plasmaCannon.luau"
+              },
+              "protonSniper": {
+                "$path": "src/features/defense/towerAnimations/protonSniper.luau"
+              },
+              "pyramidium": {
+                "$path": "src/features/defense/towerAnimations/pyramidium.luau"
+              },
+              "railgun": {
+                "$path": "src/features/defense/towerAnimations/railgun.luau"
+              },
+              "superTesla": {
+                "$path": "src/features/defense/towerAnimations/superTesla.luau"
+              },
+              "tesla": {
+                "$path": "src/features/defense/towerAnimations/tesla.luau"
+              },
+              "TowerAnimationUtils": {
+                "$path": "src/features/defense/towerAnimations/TowerAnimationUtils.luau"
+              },
+              "turret": {
+                "$path": "src/features/defense/towerAnimations/turret.luau"
+              },
+              "volcano": {
+                "$path": "src/features/defense/towerAnimations/volcano.luau"
+              }
+            },
+            "UI": {
+              "$className": "Folder",
+              "Screens": {
+                "$className": "Folder",
+                "TowerBillboardGui": {
+                  "$path": "src/features/defense/ui/screens/TowerBillboardGui.luau"
+                }
+              }
+            }
+          },
+          "Friends": {
+            "$className": "Folder",
+            "FriendServiceClient": {
+              "$path": "src/features/friends/FriendServiceClient.luau"
+            }
+          },
+          "Inventory": {
+            "$className": "Folder",
+            "InventoryServiceClient": {
+              "$path": "src/features/inventory/InventoryServiceClient.luau"
+            },
+            "InventoryServiceUtils": {
+              "$path": "src/features/inventory/InventoryServiceUtils.luau"
+            },
+            "InventorySlice": {
+              "$path": "src/features/inventory/InventorySlice.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "Components": {
+                "$className": "Folder",
+                "InventoryButton": {
+                  "$path": "src/features/inventory/ui/components/InventoryButton.luau"
+                },
+                "ItemButtonStroke": {
+                  "$path": "src/features/inventory/ui/components/ItemButtonStroke.luau"
+                },
+                "ItemIcon": {
+                  "$path": "src/features/inventory/ui/components/ItemIcon.luau"
+                },
+                "MutationIcons": {
+                  "$path": "src/features/inventory/ui/components/MutationIcons.luau"
+                }
+              },
+              "Hooks": {
+                "$className": "Folder",
+                "useInventoryItemVisibility": {
+                  "$path": "src/features/inventory/ui/hooks/useInventoryItemVisibility.luau"
+                },
+                "useItemDataLayout": {
+                  "$path": "src/features/inventory/ui/hooks/useItemDataLayout.luau"
+                },
+                "useItemDragger": {
+                  "$path": "src/features/inventory/ui/hooks/useItemDragger.luau"
+                },
+                "useSlotSize": {
+                  "$path": "src/features/inventory/ui/hooks/useSlotSize.luau"
+                }
+              },
+              "InventoryRoot": {
+                "$path": "src/features/inventory/ui/InventoryRoot.luau"
+              },
+              "Screens": {
+                "$className": "Folder",
+                "DraggedItem": {
+                  "$path": "src/features/inventory/ui/screens/DraggedItem.luau"
+                },
+                "InventoryHud": {
+                  "$path": "src/features/inventory/ui/screens/InventoryHud.luau"
+                }
+              }
+            }
+          },
+          "Leaderboards": {
+            "$className": "Folder",
+            "LeaderboardServiceClient": {
+              "$path": "src/features/leaderboards/LeaderboardServiceClient.luau"
+            },
+            "LeaderboardServiceUtils": {
+              "$path": "src/features/leaderboards/LeaderboardServiceUtils.luau"
+            },
+            "LeaderboardSlice": {
+              "$path": "src/features/leaderboards/LeaderboardSlice.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "Components": {
+                "$className": "Folder",
+                "LeaderboardSurfaceGui": {
+                  "$path": "src/features/leaderboards/ui/components/LeaderboardSurfaceGui.luau"
+                }
+              },
+              "LeaderboardsRoot": {
+                "$path": "src/features/leaderboards/ui/LeaderboardsRoot.luau"
+              }
+            }
+          },
+          "Monetization": {
+            "$className": "Folder",
+            "Hooks": {
+              "$className": "Folder",
+              "useGamepass": {
+                "$path": "src/features/monetization/hooks/useGamepass.luau"
+              },
+              "useProduct": {
+                "$path": "src/features/monetization/hooks/useProduct.luau"
+              }
+            },
+            "Modules": {
+              "$className": "Folder",
+              "Products": {
+                "$path": "src/features/monetization/modules/Products.luau"
+              }
+            },
+            "MonetizationServiceClient": {
+              "$path": "src/features/monetization/MonetizationServiceClient.luau"
+            },
+            "MonetizationServiceUtils": {
+              "$path": "src/features/monetization/MonetizationServiceUtils.luau"
+            }
+          },
+          "Mutations": {
+            "$className": "Folder",
+            "Modules": {
+              "$className": "Folder",
+              "MutationEvents": {
+                "$path": "src/features/mutations/modules/MutationEvents.luau"
+              },
+              "Mutations": {
+                "$path": "src/features/mutations/modules/Mutations.luau"
+              }
+            },
+            "MutationEvents": {
+              "$className": "Folder",
+              "inferno": {
+                "$path": "src/features/mutations/mutationEvents/inferno.luau"
+              },
+              "radioactive": {
+                "$path": "src/features/mutations/mutationEvents/radioactive.luau"
+              },
+              "volcano": {
+                "$path": "src/features/mutations/mutationEvents/volcano.luau"
+              },
+              "windy": {
+                "$path": "src/features/mutations/mutationEvents/windy.luau"
+              }
+            },
+            "MutationServiceUtils": {
+              "$path": "src/features/mutations/MutationServiceUtils.luau"
+            },
+            "MutationSlice": {
+              "$path": "src/features/mutations/MutationSlice.luau"
+            },
+            "MutationsServiceClient": {
+              "$path": "src/features/mutations/MutationsServiceClient.luau"
+            }
+          },
+          "Notifications": {
+            "$className": "Folder",
+            "NotificationServiceClient": {
+              "$path": "src/features/notifications/NotificationServiceClient.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "Notifications": {
+                "$path": "src/features/notifications/ui/Notifications.luau"
+              }
+            }
+          },
+          "Plots": {
+            "$className": "Folder",
+            "Classes": {
+              "$className": "Folder",
+              "PlotClient": {
+                "$path": "src/features/plots/classes/PlotClient.luau"
+              }
+            },
+            "Modules": {
+              "$className": "Folder",
+              "RebirthUtils": {
+                "$path": "src/features/plots/modules/RebirthUtils.luau"
+              }
+            },
+            "PlotServiceClient": {
+              "$path": "src/features/plots/PlotServiceClient.luau"
+            },
+            "PlotServiceUtils": {
+              "$path": "src/features/plots/PlotServiceUtils.luau"
+            },
+            "PlotSlice": {
+              "$path": "src/features/plots/PlotSlice.luau"
+            },
+            "PlotTypes": {
+              "$path": "src/features/plots/PlotTypes.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "Components": {
+                "$className": "Folder",
+                "TowerUpgradeSurfaceGui": {
+                  "$path": "src/features/plots/ui/components/TowerUpgradeSurfaceGui.luau"
+                }
+              },
+              "PlotRoot": {
+                "$path": "src/features/plots/ui/PlotRoot.luau"
+              },
+              "Screens": {
+                "$className": "Folder",
+                "CrateTimers": {
+                  "$path": "src/features/plots/ui/screens/CrateTimers.luau"
+                },
+                "TowerUpgradeGui": {
+                  "$path": "src/features/plots/ui/screens/TowerUpgradeGui.luau"
+                }
+              }
+            }
+          },
+          "Settings": {
+            "$className": "Folder",
+            "Hooks": {
+              "$className": "Folder",
+              "useSetting": {
+                "$path": "src/features/settings/hooks/useSetting.luau"
+              }
+            },
+            "SettingInitializer": {
+              "$path": "src/features/settings/SettingInitializer.luau"
+            },
+            "SettingsServiceClient": {
+              "$path": "src/features/settings/SettingsServiceClient.luau"
+            },
+            "SettingsServiceUtils": {
+              "$path": "src/features/settings/SettingsServiceUtils.luau"
+            }
+          },
+          "Shop": {
+            "$className": "Folder",
+            "ShopSlice": {
+              "$path": "src/features/shop/ShopSlice.luau"
+            },
+            "ShopUtils": {
+              "$path": "src/features/shop/ShopUtils.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "Components": {
+                "$className": "Folder",
+                "ShopContentFrame": {
+                  "$path": "src/features/shop/ui/components/ShopContentFrame.luau"
+                },
+                "ShopFrame": {
+                  "$path": "src/features/shop/ui/components/ShopFrame.luau"
+                }
+              },
+              "Frames": {
+                "$className": "Folder",
+                "ShopCodes": {
+                  "$path": "src/features/shop/ui/frames/ShopCodes.luau"
+                },
+                "ShopCurrency": {
+                  "$path": "src/features/shop/ui/frames/ShopCurrency.luau"
+                },
+                "ShopGamepasses": {
+                  "$path": "src/features/shop/ui/frames/ShopGamepasses.luau"
+                },
+                "ShopLimitedItems": {
+                  "$path": "src/features/shop/ui/frames/ShopLimitedItems.luau"
+                },
+                "ShopPacks": {
+                  "$path": "src/features/shop/ui/frames/ShopPacks.luau"
+                }
+              },
+              "ShopContent": {
+                "$path": "src/features/shop/ui/ShopContent.luau"
+              }
+            }
+          },
+          "Tutorial": {
+            "$className": "Folder",
+            "Modules": {
+              "$className": "Folder",
+              "TutorialInstructions": {
+                "$path": "src/features/tutorial/modules/TutorialInstructions.luau"
+              }
+            },
+            "TutorialServiceClient": {
+              "$path": "src/features/tutorial/TutorialServiceClient.luau"
+            },
+            "TutorialServiceUtils": {
+              "$path": "src/features/tutorial/TutorialServiceUtils.luau"
+            },
+            "TutorialSteps": {
+              "$path": "src/features/tutorial/TutorialSteps.luau"
+            },
+            "UI": {
+              "$className": "Folder",
+              "TutorialRoot": {
+                "$path": "src/features/tutorial/ui/TutorialRoot.luau"
+              }
             }
           }
         },
-        "Classes": {
-          "$className": "Folder"
+        "Core": {
+          "$className": "Folder",
+          "Platform": {
+            "$className": "Folder",
+            "ColorTweaker": {
+              "$path": "src/core/platform/ColorTweaker.luau"
+            },
+            "IsUserInGroup": {
+              "$path": "src/core/platform/IsUserInGroup.luau"
+            },
+            "RetryAsync": {
+              "$path": "src/core/platform/RetryAsync.luau"
+            },
+            "SafeTeleport": {
+              "$path": "src/core/platform/SafeTeleport.luau"
+            },
+            "SoundController": {
+              "$path": "src/core/platform/SoundController.luau"
+            },
+            "VfxUtils": {
+              "$path": "src/core/platform/VfxUtils.luau"
+            }
+          },
+          "UI": {
+            "$className": "Folder",
+            "Abbreviate": {
+              "$path": "src/core/ui/Abbreviate.luau"
+            },
+            "Components": {
+              "$className": "Folder",
+              "ErrorMessage": {
+                "$path": "src/core/ui/components/ErrorMessage.luau"
+              },
+              "NotificationMessage": {
+                "$path": "src/core/ui/components/NotificationMessage.luau"
+              },
+              "PlayerPortrait": {
+                "$path": "src/core/ui/components/PlayerPortrait.luau"
+              },
+              "RainbowGradient": {
+                "$path": "src/core/ui/components/RainbowGradient.luau"
+              }
+            },
+            "DisplayNameWithIcons": {
+              "$path": "src/core/ui/DisplayNameWithIcons.luau"
+            },
+            "FormatCurrency": {
+              "$path": "src/core/ui/FormatCurrency.luau"
+            },
+            "FormatTime": {
+              "$path": "src/core/ui/FormatTime.luau"
+            },
+            "GetPlayerPortraitImageId": {
+              "$path": "src/core/ui/GetPlayerPortraitImageId.luau"
+            },
+            "Hooks": {
+              "$className": "Folder",
+              "serverTimeAtom": {
+                "$path": "src/core/ui/hooks/serverTimeAtom.luau"
+              },
+              "useAbsSize": {
+                "$path": "src/core/ui/hooks/useAbsSize.luau"
+              },
+              "useDataState": {
+                "$path": "src/core/ui/hooks/useDataState.luau"
+              },
+              "useDeviceInput": {
+                "$path": "src/core/ui/hooks/useDeviceInput.luau"
+              },
+              "useServerTime": {
+                "$path": "src/core/ui/hooks/useServerTime.luau"
+              },
+              "useServerTimeBinding": {
+                "$path": "src/core/ui/hooks/useServerTimeBinding.luau"
+              },
+              "useSpring": {
+                "$path": "src/core/ui/hooks/useSpring.luau"
+              },
+              "useTag": {
+                "$path": "src/core/ui/hooks/useTag.luau"
+              },
+              "useTween": {
+                "$path": "src/core/ui/hooks/useTween.luau"
+              },
+              "useViewportSize": {
+                "$path": "src/core/ui/hooks/useViewportSize.luau"
+              }
+            },
+            "Primitives": {
+              "$className": "Folder",
+              "AutoScaledFrame": {
+                "$path": "src/core/ui/primitives/AutoScaledFrame.luau"
+              },
+              "Button": {
+                "$path": "src/core/ui/primitives/Button.luau"
+              },
+              "ImageLabel": {
+                "$path": "src/core/ui/primitives/ImageLabel.luau"
+              },
+              "SlideOutFrame": {
+                "$path": "src/core/ui/primitives/SlideOutFrame.luau"
+              },
+              "TextBox": {
+                "$path": "src/core/ui/primitives/TextBox.luau"
+              },
+              "TextLabel": {
+                "$path": "src/core/ui/primitives/TextLabel.luau"
+              }
+            },
+            "Suffixes": {
+              "$path": "src/core/ui/Suffixes.luau"
+            },
+            "UITypes": {
+              "$path": "src/core/ui/UITypes.luau"
+            }
+          },
+          "Util": {
+            "$className": "Folder",
+            "leaderboardPairs": {
+              "$path": "src/core/util/leaderboardPairs.luau"
+            }
+          }
         },
-        "Modules": {
-          "$className": "Folder"
+        "Game": {
+          "$className": "Folder",
+          "Assets": {
+            "$className": "Folder",
+            "ImageIds": {
+              "$path": "src/game/assets/ImageIds.luau"
+            },
+            "Sounds": {
+              "$path": "src/game/assets/Sounds.luau"
+            }
+          },
+          "Configs": {
+            "$path": "src/game/Configs.luau"
+          },
+          "Definitions": {
+            "$className": "Folder",
+            "defs.d": {
+              "$path": "src/game/definitions/defs.d.luau"
+            }
+          },
+          "Items": {
+            "$className": "Folder",
+            "ConveyorUpgrades": {
+              "$path": "src/game/items/ConveyorUpgrades.luau"
+            },
+            "DataTemplate": {
+              "$path": "src/game/items/DataTemplate.luau"
+            },
+            "Tiers": {
+              "$path": "src/game/items/Tiers.luau"
+            }
+          }
+        },
+        "StartUp": {
+          "$className": "Folder",
+          "MountUI": {
+            "$path": "src/startup/MountUI.luau"
+          },
+          "Client": {
+            "$path": "src/startup/Client.client.luau"
+          }
         }
       },
       "Packages": {
         "$path": "Packages"
-      },
-      "UI": {
-        "$path": "src/ui"
       }
     },
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/startup/Server.server.luau"
-      },
-      "Services": {
+      "Features": {
         "$className": "Folder",
-        "ExampleService": {
+        "AutoRejoin": {
           "$className": "Folder",
-          "ExampleServiceServer": {
-            "$path": "src/services/ExampleService/Server.luau"
+          "AutoRejoinServiceServer": {
+            "$path": "src/features/autoRejoin/AutoRejoinServiceServer.luau"
+          }
+        },
+        "Codes": {
+          "$className": "Folder",
+          "CodeServiceServer": {
+            "$path": "src/features/codes/CodeServiceServer.luau"
+          }
+        },
+        "Conveyor": {
+          "$className": "Folder",
+          "ConveyorServer": {
+            "$path": "src/features/conveyor/ConveyorServer.luau"
+          }
+        },
+        "Defense": {
+          "$className": "Folder",
+          "Classes": {
+            "$className": "Folder",
+            "DefenseServer": {
+              "$path": "src/features/defense/classes/DefenseServer.luau"
+            },
+            "EnemyServer": {
+              "$path": "src/features/defense/classes/EnemyServer.luau"
+            },
+            "TowerServer": {
+              "$path": "src/features/defense/classes/TowerServer.luau"
+            }
+          }
+        },
+        "Friends": {
+          "$className": "Folder",
+          "FriendServiceServer": {
+            "$path": "src/features/friends/FriendServiceServer.luau"
+          }
+        },
+        "Inventory": {
+          "$className": "Folder",
+          "InventoryServiceServer": {
+            "$path": "src/features/inventory/InventoryServiceServer.luau"
+          }
+        },
+        "Leaderboards": {
+          "$className": "Folder",
+          "LeaderboardServiceServer": {
+            "$path": "src/features/leaderboards/LeaderboardServiceServer.luau"
+          }
+        },
+        "Monetization": {
+          "$className": "Folder",
+          "Modules": {
+            "$className": "Folder",
+            "ProductServerCallbacks": {
+              "$path": "src/features/monetization/modules/ProductServerCallbacks.luau"
+            }
+          },
+          "MonetizationServiceServer": {
+            "$path": "src/features/monetization/MonetizationServiceServer.luau"
+          }
+        },
+        "Mutations": {
+          "$className": "Folder",
+          "MutationServiceServer": {
+            "$path": "src/features/mutations/MutationServiceServer.luau"
+          }
+        },
+        "Notifications": {
+          "$className": "Folder",
+          "NotificationServiceServer": {
+            "$path": "src/features/notifications/NotificationServiceServer.luau"
+          }
+        },
+        "Plots": {
+          "$className": "Folder",
+          "Classes": {
+            "$className": "Folder",
+            "PlotServer": {
+              "$path": "src/features/plots/classes/PlotServer.luau"
+            }
+          },
+          "PlotServiceServer": {
+            "$path": "src/features/plots/PlotServiceServer.luau"
+          }
+        },
+        "Settings": {
+          "$className": "Folder",
+          "SettingsServiceServer": {
+            "$path": "src/features/settings/SettingsServiceServer.luau"
+          }
+        },
+        "Tutorial": {
+          "$className": "Folder",
+          "TutorialServiceServer": {
+            "$path": "src/features/tutorial/TutorialServiceServer.luau"
           }
         }
       },
-      "Classes": {
+      "Core": {
         "$className": "Folder"
       },
-      "Modules": {
+      "Game": {
         "$className": "Folder"
-      }
-    },
-    "StarterPlayer": {
-      "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/startup/Client.client.luau"
+      },
+      "StartUp": {
+        "$className": "Folder",
+        "Server": {
+          "$path": "src/startup/Server.server.luau"
         }
       }
     }
