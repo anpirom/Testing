@@ -1,0 +1,44 @@
+{
+  "emitLegacyScripts": false,
+  "name": "easy-defense",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Source": {
+        "$className": "Folder",
+        "Features": {
+          "$className": "Folder"
+        },
+        "Core": {
+          "$className": "Folder"
+        },
+        "Game": {
+          "$className": "Folder",
+          "Configs": {
+            "$path": "src/game/Configs.luau"
+          }
+        },
+        "StartUp": {
+          "$className": "Folder"
+        }
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+    "ServerScriptService": {
+      "Features": {
+        "$className": "Folder"
+      },
+      "Core": {
+        "$className": "Folder"
+      },
+      "Game": {
+        "$className": "Folder"
+      },
+      "StartUp": {
+        "$className": "Folder"
+      }
+    }
+  }
+}
