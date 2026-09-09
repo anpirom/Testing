@@ -6,19 +6,16 @@
     "ReplicatedStorage": {
       "Source": {
         "$className": "Folder",
-        "Features": {
+        "features": {
           "$className": "Folder"
         },
-        "Core": {
+        "core": {
           "$className": "Folder"
         },
-        "Game": {
-          "$className": "Folder",
-          "Configs": {
-            "$path": "src/game/Configs.luau"
-          }
+        "game": {
+          "$className": "Folder"
         },
-        "StartUp": {
+        "startup": {
           "$className": "Folder"
         }
       },
@@ -27,18 +24,18 @@
       }
     },
     "ServerScriptService": {
-      "Features": {
-        "$className": "Folder"
-      },
-      "Core": {
-        "$className": "Folder"
-      },
-      "Game": {
-        "$className": "Folder"
-      },
-      "StartUp": {
-        "$className": "Folder"
-      }
+      "features": {
+          "$className": "Folder"
+        },
+        "core": {
+          "$className": "Folder"
+        },
+        "game": {
+          "$className": "Folder"
+        },
+        "startup": {
+          "$className": "Folder"
+        }
     }
   }
 }
