@@ -1,6 +1,4 @@
-local MountGUI = require(game:GetService("ReplicatedStorage").Source.Startup.MountUI)
 local Players = game:GetService("Players")
 Players.PlayerAdded:Connect(function(ply)
     print("Player joined: " .. ply.Name)
-    MountGUI()
 end)

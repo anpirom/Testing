@@ -23,12 +23,6 @@
           "Configs": {
             "$path": "src/game/Configs.luau"
           }
-        },
-        "Startup": {
-          "$className": "Folder",
-          "MountUI": {
-            "$path": "src/startup/MountUI.luau"
-          }
         }
       },
       "Packages": {
