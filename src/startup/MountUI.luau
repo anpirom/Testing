@@ -1,5 +1,6 @@
-local _TopBarPlus =  game.ReplicatedStorage.Source.Features.App.UI.TopBarPLus
+local ReplicatedStorage=game:GetService("ReplicatedStorage")
+local TopBarPlus=require(ReplicatedStorage.Source.Features.App.UI.TopBarPlus)
 
 return function()
-    _TopBarPlus()
+    TopBarPlus()
 end
