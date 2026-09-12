@@ -8,13 +8,34 @@
         "$className": "Folder",
         "Features": {
           "$className": "Folder",
-          "App": {
+          "Widgets": {
             "$className": "Folder",
-            "UI": {
+            "Components": {
               "$className": "Folder",
-              "TopBarPlus": {
-                "$path": "src/features/app/UI/TopBarPlus.luau"
+              "MainGameplay": {
+                "$path": "src/features/Widgets/Components/MainGameplay.luau"
               }
+            },
+            "FrameManager": {
+              "$path": "src/features/Widgets/FrameManager.luau"
+            },
+            "Primitive": {
+              "$className": "Folder",
+              "BuyButtons": {
+                "$path": "src/features/Widgets/Primitive/BuyButtons.luau"
+              }
+            },
+            "Util": {
+              "$className": "Folder",
+              "EasySpring": {
+                "$path": "src/features/Widgets/Util/EasySpring.luau"
+              },
+              "UITypes": {
+                "$path": "src/features/Widgets/Util/UITypes.luau"
+              }
+            },
+            "WidgetsHandler": {
+              "$path": "src/features/Widgets/WidgetsHandler.luau"
             }
           }
         },
@@ -23,20 +44,19 @@
           "Configs": {
             "$path": "src/game/Configs.luau"
           }
+        },
+        "Startup": {
+          "$className": "Folder",
+          "ClientStart": {
+            "$path": "src/startup/ClientStart.luau"
+          }
         }
       },
       "Packages": {
         "$path": "Packages"
       }
     },
-    "ServerScriptService": {
-      "Startup": {
-        "$className": "Folder",
-        "StartupServer": {
-          "$path": "src/startup/Server.server.luau"
-        }
-      }
-    },
+    "ServerScriptService": {},
     "StarterPlayer": {
       "StarterPlayerScripts": {}
     }

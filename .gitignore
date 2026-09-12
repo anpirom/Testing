@@ -1,5 +1,5 @@
 # Project place file
-/easy-defense.rbxlx
+/Testing.rbxlx
 
 # Roblox Studio lock files
 /*.rbxlx.lock
@@ -9,3 +9,4 @@ sourcemap.json
 node_modules/
 Packages/ 
 assets/
+scripts/
