@@ -5,8 +5,8 @@ const BASE_PATH = path.join(__dirname, "../src");
 const PROJECT_PATH = path.join(__dirname, "../default.project.json");
 
 const NON_SERVER_NAMES = ["servertime"];
-const SERVER_ONLY_NAMES = ["CodesService"];
-const SERVER_ONLY_FOLDERS = [];
+const SERVER_ONLY_NAMES = [];
+const SERVER_ONLY_FOLDERS = ["Classes"];
 
 function toPosix(p) {
 	return p.split(path.sep).join("/");

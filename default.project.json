@@ -6,36 +6,18 @@
     "ReplicatedStorage": {
       "Source": {
         "$className": "Folder",
+        "Core": {
+          "$className": "Folder",
+          "data": {
+            "$path": "src/core/data.luau"
+          }
+        },
         "Features": {
           "$className": "Folder",
-          "Widgets": {
+          "Pet": {
             "$className": "Folder",
-            "Components": {
-              "$className": "Folder",
-              "MainGameplay": {
-                "$path": "src/features/Widgets/Components/MainGameplay.luau"
-              }
-            },
-            "FrameManager": {
-              "$path": "src/features/Widgets/FrameManager.luau"
-            },
-            "Primitive": {
-              "$className": "Folder",
-              "BuyButtons": {
-                "$path": "src/features/Widgets/Primitive/BuyButtons.luau"
-              }
-            },
-            "Util": {
-              "$className": "Folder",
-              "EasySpring": {
-                "$path": "src/features/Widgets/Util/EasySpring.luau"
-              },
-              "UITypes": {
-                "$path": "src/features/Widgets/Util/UITypes.luau"
-              }
-            },
-            "WidgetsHandler": {
-              "$path": "src/features/Widgets/WidgetsHandler.luau"
+            "renderClient": {
+              "$path": "src/features/pet/renderClient.luau"
             }
           }
         },
@@ -56,7 +38,26 @@
         "$path": "Packages"
       }
     },
-    "ServerScriptService": {},
+    "ServerScriptService": {
+      "Core": {
+        "$className": "Folder",
+        "Classes": {
+          "$className": "Folder",
+          "petClass": {
+            "$path": "src/core/classes/petClass.luau"
+          }
+        }
+      },
+      "Features": {
+        "$className": "Folder",
+        "Pet": {
+          "$className": "Folder",
+          "ServerPet": {
+            "$path": "src/features/pet/ServerPet.server.luau"
+          }
+        }
+      }
+    },
     "StarterPlayer": {
       "StarterPlayerScripts": {}
     }

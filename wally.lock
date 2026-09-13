@@ -3,14 +3,14 @@
 registry = "test"
 
 [[package]]
-name = "1foreverhd/topbarplus"
-version = "3.4.0"
+name = "ayrezrblx/replica"
+version = "0.1.9"
 dependencies = []
 
 [[package]]
 name = "caio/testing"
 version = "0.1.0"
-dependencies = [["Janitor", "howmanysmall/janitor@1.18.3"], ["Networker", "leifstout/networker@0.3.1"], ["Promise", "howmanysmall/typed-promise@4.0.6"], ["Ripple", "littensy/ripple@0.10.2"], ["Sift", "csqrl/sift@0.0.11"], ["Signal", "sleitnick/signal@2.0.3"], ["Topbarplus", "1foreverhd/topbarplus@3.4.0"], ["scribe", "ericplane/scribe@2.3.0"]]
+dependencies = [["Janitor", "howmanysmall/janitor@1.18.3"], ["Networker", "leifstout/networker@0.3.1"], ["Promise", "howmanysmall/typed-promise@4.0.6"], ["Ripple", "littensy/ripple@0.10.2"], ["Sift", "csqrl/sift@0.0.11"], ["Signal", "sleitnick/signal@2.0.3"], ["replica", "ayrezrblx/replica@0.1.9"], ["scribe", "ericplane/scribe@2.3.0"]]
 
 [[package]]
 name = "csqrl/sift"
